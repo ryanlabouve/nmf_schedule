@@ -1,10 +1,17 @@
 <div class="schedule">
   <section class="day-nav row centered collapse">
     <h2 id="title">{{link-to 'NMF Schedule' 'index'}}</h2>
-    <ul class="small-12 columns">
-      <li>{{link-to 'Thursday' 'day' 'thursday'}}</li>
-      <li>{{link-to 'Friday' 'day' 'friday'}}</li>
-      <li>{{link-to 'Saturday' 'day' 'saturday'}}</li>
+    <ul class="row">
+      {{#unless isHome}}
+        <li class="small-3 columns">
+          {{#link-to "day.index" class="back-link"}}
+            <img src="images/back-arrow.svg" class="back-icon" />
+          {{/link-to}}
+        </li>
+      {{/unless}}
+      <li class="small-3 columns">{{link-to 'Thursday' 'day' 'thursday'}}</li>
+      <li class="small-3 columns">{{link-to 'Friday' 'day' 'friday'}}</li>
+      <li class="small-3 columns">{{link-to 'Saturday' 'day' 'saturday'}}</li>
     </ul>
   </section>
   {{liquid-outlet watchModels=true class="row body-container"}}

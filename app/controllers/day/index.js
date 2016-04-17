@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import $ from 'jquery';
 
 export default Ember.Controller.extend({
   sortProps: ['sortableTime','stageName'],
@@ -6,8 +7,9 @@ export default Ember.Controller.extend({
   actions: {
     chooseTalk(event) {
       let talkId = $(event.target).closest('li').data('talk-id');
+      console.log('talkId = ', talkId);
       if (talkId && event.target.nodeName !== 'BUTTON') {
-        this.transitionToRoute('day.talk', this.get('model.id'), talkId);
+        this.transitionToRoute('day.event', this.get('model.id'), talkId);
       }else{
         console.log('skipping!');
       }

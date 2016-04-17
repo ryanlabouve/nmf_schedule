@@ -2,7 +2,7 @@ var dayMappings = {
   'thursday': 0,
   'friday': 1,
   'saturday': 2
-}
+};
 
 
 function dayIsLessThan(day1, day2){
