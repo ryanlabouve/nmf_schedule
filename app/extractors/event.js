@@ -17,7 +17,9 @@ function toInt(val, base = 10) {
 }
 
 function extractID(possibleID) {
-  return(possibleID);
+  var segments = possibleID.split('/');
+  return segments[segments.length-2];
+  //return(possibleID);
   //var match = /^(?:up_|item\?id=)(\d+)$/.exec(possibleID);
   //return (match && match[1]) || null;
 }
