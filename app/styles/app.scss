@@ -185,7 +185,10 @@ ol.no-bullets{
   li{
     border-bottom:1px solid #ddd;
     padding:0;
+    cursor:pointer;
   }
+  li:nth-child(even) {background: #EDEDED;}
+  li:nth-child(odd) {background: #FFF;}
 }
 
 .event-time h5, .stage-name h5{
