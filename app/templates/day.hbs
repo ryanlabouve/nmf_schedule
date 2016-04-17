@@ -1,0 +1,7 @@
+{{outlet}}
+
+<ul>
+{{#each sortedEvents as |event|}}
+<li>{{event.sortableTime}} -- {{event.day}} {{event.time}} {{event.bandName}} :: {{event.stageName}}</li>
+{{/each}}
+</ul>

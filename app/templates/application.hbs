@@ -1,9 +1,8 @@
 <h2 id="title">Welcome to Ember</h2>
 
-<ul>
-{{#each model as |event|}}
-<li>{{event.sortableTime}} -- {{event.day}} {{event.time}} {{event.bandName}} :: {{event.stageName}}</li>
-{{/each}}
+<ul class="days">
+  <li>{{link-to 'Thursday' 'day' 'thursday'}}</li>
+  <li>{{link-to 'Friday' 'day' 'friday'}}</li>
+  <li>{{link-to 'Saturday' 'day' 'saturday'}}</li>
 </ul>
-
 {{outlet}}
