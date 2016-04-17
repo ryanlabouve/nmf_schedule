@@ -3,25 +3,25 @@
   {{#memory-scroll key=(concat "day" day.id) class="memory-scroll" }}
 
 
-    <section class="day">
+    <section class="row day">
         <div class="row" id={{day.id}}>
           <div class="small-12 columns">
-            <h2 class="centered">{{day.id}}</h2>
+            <h2 class="">{{day.id}}</h2>
           </div>
         </div>
-        <ol class="row" onclick={{action "chooseTalk"}} >
+        <ol class="no-bullets" onclick={{action "chooseTalk"}} >
           {{#each sortedEvents as |event|}}
             <li class='small-12 columns accordion' data-talk-id={{event.id}}>
               <div class="row small-collapse medium-uncollapse">
-                <div class="event-time small-12 medium-2 columns">
-                  <p>{{event.time}}</p>
+                <div class="event-time small-3 medium-2 columns">
+                  <h5>{{event.time}}</h5>
                 </div>
-                <div class="event-info small-12 medium-5 columns">
+                <div class="band-name small-9 medium-5 columns">
                   <h3 data-event-id={{event.id}}>{{event.bandName}}</h3>
                   {{!is-interested-button talkId=talk.id}}
                 </div>
-                <div class="event-info small-12 medium-5 columns">
-                  <p>{{event.stageName}}</p>
+                <div class="stage-name small-9 medium-5 columns">
+                  <h5>{{event.stageName}}</h5>
                   {{!is-interested-button talkId=talk.id}}
                 </div>
               </div>

@@ -1,20 +1,22 @@
 <div class="schedule">
   <section class="day-nav row centered collapse">
-    <h2 id="title">{{link-to 'NMF Schedule' 'index'}}</h2>
-    <ul class="row">
-      {{#unless isHome}}
-        <li class="small-3 columns">
-          {{#link-to "day.index" class="back-link"}}
-            <img src="images/back-arrow.svg" class="back-icon" />
-          {{/link-to}}
-        </li>
-      {{/unless}}
+    <!--<h2 id="title">{{link-to 'NMF Schedule' 'index'}}</h2>-->
+    <ul class="row nav">
+      <li class="small-3 columns">
+          {{#if showArrow}}
+            {{#link-to "day.index" class="back-link"}}
+              <img src="back-arrow.svg" class="back-icon" />
+            {{/link-to}}
+          {{else}}
+            {{#link-to 'index'}}<img src="nmf.png" class="back-icon" />{{/link-to}}
+          {{/if}}
+      </li>
       <li class="small-3 columns">{{link-to 'Thursday' 'day' 'thursday'}}</li>
       <li class="small-3 columns">{{link-to 'Friday' 'day' 'friday'}}</li>
       <li class="small-3 columns">{{link-to 'Saturday' 'day' 'saturday'}}</li>
     </ul>
   </section>
-  {{liquid-outlet watchModels=true class="row body-container"}}
+  {{liquid-outlet watchModels=true class="body-container"}}
 </div>
 
 

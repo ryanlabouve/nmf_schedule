@@ -37,6 +37,7 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-foundation": "0.7.2",
+    "ember-hammertime": "1.0.2",
     "ember-resolver": "^2.0.3",
     "liquid-fire": "ember-animation/liquid-fire#c7010b0795c33f17ed07582ffb952ff853f213ac",
     "memory-scroll": "0.2.0"

@@ -8,5 +8,5 @@ const {
 
 export default Controller.extend({
   routing: service('-routing'),
-  isHome: computed.equal('routing.currentPath', 'day.index')
+  showArrow: computed.equal('routing.currentPath', 'day.event')
 });
