@@ -17,13 +17,14 @@ export default DS.RESTSerializer.extend({
 
     this.extractMeta(store, type, payload);
 
-    return this._super(store, type, payload, id);
+    return this._super(store, type, payload, id, requestType);
   },
 
   normalizeArrayResponse(store, type, payload, id, requestType) {
     console.log('running normalizeArrayResponse');
     payload = parseArray(payload);
-
+    console.log("payload ---------");
+    console.log(payload);
     this.extractMeta(store, type, payload, id, requestType);
 
     var returnValue = this._super(store, type, payload, id, requestType);

@@ -37,7 +37,9 @@ function extractTag(title) {
 
 function extractTitle(title) {
   var tag = extractTag(title);
+  console.log('tag = ', tag);
   title = tag ? title.slice(tag.length + 2) : title;
+  console.log('title = ', title);
   return title.replace(/\s+/g, " ").trim();
 }
 
@@ -214,6 +216,7 @@ function extractComments(event, rows) {
 }
 
 function extractEvent(row1, row2, row3, commentRows) {
+  console.log('calling extractEvent', row1, row2, row3);
   var event = {
     id:        null,
     tag:       null,
@@ -266,9 +269,13 @@ function extractEvent(row1, row2, row3, commentRows) {
       titleText = $title.text().trim(),
       titleHref = $title.attr("href");
 
+  console.log('$title = ', $title);
+
   event.tag   = extractTag(titleText);
   event.title = extractTitle(titleText);
   event.url   = titleHref;
+
+  console.log('event.title = ', event.title);
 
   if (event.url.indexOf("item?id=") === 0) {
     event.tag = event.tag || "Discuss";
@@ -338,6 +345,8 @@ function extractEvent(row1, row2, row3, commentRows) {
     comments = extractComments(event, commentRows);
   }
 
+  console.log('event = ', event);
+
   return [event, comments];
 }
 
@@ -367,6 +376,8 @@ export function extractArray(doc) {
   rows.forEach( row => {
     events.push( extractEvent(row, row.nextElementSibling)[0] );
   });
+
+  console.log("payload = ", payload);
 
   return payload;
 }

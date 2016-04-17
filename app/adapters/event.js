@@ -8,7 +8,7 @@ import DS from 'ember-data';
 import config from 'nmf-schedule/config/environment';
 import { isError, parentID } from 'nmf-schedule/extractors/event';
 
-export default DS.Adapter.extend({
+export default DS.RESTAdapter.extend({
 
   proxy: config.APP.HACKERNEWS_CORS_PROXY,
   host: config.APP.HACKERNEWS_HOST,

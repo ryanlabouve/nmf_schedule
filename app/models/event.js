@@ -5,5 +5,6 @@ export default Model.extend({
   bandName: attr(),
   day: attr(),
   time: attr(),
-  stageName: attr()
+  stageName: attr(),
+  title: attr()
 });
