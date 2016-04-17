@@ -1,8 +1,8 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">{{link-to 'NMF Schedule' 'index'}}</h2>
 
 <ul class="days">
   <li>{{link-to 'Thursday' 'day' 'thursday'}}</li>
   <li>{{link-to 'Friday' 'day' 'friday'}}</li>
   <li>{{link-to 'Saturday' 'day' 'saturday'}}</li>
 </ul>
-{{outlet}}
+{{liquid-outlet watchModels=true}}
