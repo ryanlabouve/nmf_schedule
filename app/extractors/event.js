@@ -17,8 +17,9 @@ function toInt(val, base = 10) {
 }
 
 function extractID(possibleID) {
-  var match = /^(?:up_|item\?id=)(\d+)$/.exec(possibleID);
-  return (match && match[1]) || null;
+  return(possibleID);
+  //var match = /^(?:up_|item\?id=)(\d+)$/.exec(possibleID);
+  //return (match && match[1]) || null;
 }
 
 function generateID(prefix = "dead") {
@@ -37,9 +38,7 @@ function extractTag(title) {
 
 function extractTitle(title) {
   var tag = extractTag(title);
-  console.log('tag = ', tag);
   title = tag ? title.slice(tag.length + 2) : title;
-  console.log('title = ', title);
   return title.replace(/\s+/g, " ").trim();
 }
 
@@ -161,126 +160,120 @@ function extractComment(event, row) {
   return comment;
 }
 
-function extractComments(event, rows) {
-  var comments = [];
+//function extractComments(event, rows) {
+  //var comments = [];
 
-  event.comments = [];
+  //event.comments = [];
 
-  // Keep track of the nesting of the comments. This is orangized as a stack of
-  // { level, parent, lastSibling } tuples.
-  //
-  // The nesting level is an "arbitary" integer scale where larger numbers means
-  // deeper nesting. (In reality, this number corresponding to the width of
-  // indentation/padding in the markup.)
-  //
-  // The parent is parent for all comments at this level, i.e. the most recently
-  // seen comment from the previous level.
-  //
-  // The lastSibling is the most recently seen comment at this level.
+  //// Keep track of the nesting of the comments. This is orangized as a stack of
+  //// { level, parent, lastSibling } tuples.
+  ////
+  //// The nesting level is an "arbitary" integer scale where larger numbers means
+  //// deeper nesting. (In reality, this number corresponding to the width of
+  //// indentation/padding in the markup.)
+  ////
+  //// The parent is parent for all comments at this level, i.e. the most recently
+  //// seen comment from the previous level.
+  ////
+  //// The lastSibling is the most recently seen comment at this level.
 
-  var nesting = [ [0, null, null] ];
+  //var nesting = [ [0, null, null] ];
 
-  toArray(rows).forEach( (row) => {
-    let comment = extractComment(event, row);
+  //toArray(rows).forEach( (row) => {
+    //let comment = extractComment(event, row);
 
-    let level, parentComment, lastSibling;
+    //let level, parentComment, lastSibling;
 
-    [level, parentComment, lastSibling] = nesting[0];
+    //[level, parentComment, lastSibling] = nesting[0];
 
-    while (comment.level < level) {
-      nesting.shift();
-      [level, parentComment, lastSibling] = nesting[0];
-    }
+    //while (comment.level < level) {
+      //nesting.shift();
+      //[level, parentComment, lastSibling] = nesting[0];
+    //}
 
-    if (comment.level === level) {
-      comment.parent = parentComment && parentComment.id;
-      nesting[0][2]  = comment;
-    } else {
-      parentComment  = lastSibling;
-      comment.parent = parentComment.id;
-      nesting.unshift( [comment.level, parentComment, comment] );
-    }
+    //if (comment.level === level) {
+      //comment.parent = parentComment && parentComment.id;
+      //nesting[0][2]  = comment;
+    //} else {
+      //parentComment  = lastSibling;
+      //comment.parent = parentComment.id;
+      //nesting.unshift( [comment.level, parentComment, comment] );
+    //}
 
-    comments.push( comment );
+    //comments.push( comment );
 
-    if (parentComment) {
-      parentComment.comments.push( comment.id );
-    } else {
-      event.comments.push( comment.id );
-    }
+    //if (parentComment) {
+      //parentComment.comments.push( comment.id );
+    //} else {
+      //event.comments.push( comment.id );
+    //}
 
-    delete comment.level;
-  });
+    //delete comment.level;
+  //});
 
-  return comments;
-}
+  //return comments;
+//}
 
-function extractEvent(row1, row2, row3, commentRows) {
-  console.log('calling extractEvent', row1, row2, row3);
+function extractEvent(row1/*, row2, row3, commentRows*/) {
   var event = {
     id:        null,
-    tag:       null,
-    title:     null,
-    url:       null,
-    source:    null,
-    body:      null,
-    points:    null,
-    submitter: null,
-    submitted: null,
-    comments:  null,
-    commentsCount: null
+    day:       null,
+    stage:     null,
+    time:      null,
+    band:      null,
+    link:      null
   };
 
   var comments = [];
 
-  // There are three possible ways to extract the ID:
-  //
-  //   1. The ID attribute of the upvote link      <a id="up_9031419" href="..."><div class="votearrow" title="upvote"></div></a>
-  //   2. The comments link href                   <a href="item?id=9031419">30 comments</a>
-  //   3. The main link href (jobs & discussions)  <a href="item?id=9030790">Ask HN: How to get started freelancing?</a>
-  //
-  // Some jobs are external links that are neither up-votable nor commentable,
-  // so we just have to generate an ID if we couldn't find one.
+  event.id = extractID( $(".band-title a", row1).attr("href") );
 
-  event.id = extractID( $("a:has(.votearrow)", row1).attr("id") ) ||
-             extractID( $(".subtext a:last-of-type", row2).attr("href") ) ||
-             extractID( $(".title a", row1).attr("href") ) ||
-             generateID("job");
-
-  // A link on Hacker News usually look like this:
+  // An event on NMF Schedule usually look like this:
   //
-  //   <a href="...">Show HN: A Unixy approach to WebSockets</a> <span class="sitebit comhead"> (websocketd.com)</span>
+  //      <li class="saturday bluebonnet-bar after-midnight ">
+	//				<div class="schedule-item-info">
+	//					<div class="show-time ">
+  //					  12:00 am
+	//					</div>
+	//					<div class="band-title">
+	//						<a href="http://normanmusicfestival.com/bands/tyler-hopkins-the-rebellion/">Tyler Hopkins &#038; The Rebellion</a>
+	//					</div>
+	//					<div class="show-stage">
+	//						Bluebonnet Bar
+  //					</div>
+	//				</div>
+	//			</li>
   //
   // We want to extract:
   //
-  //   1. The title:  "A Unixy approach to WebSockets"
-  //   2. The url:    "http://websocketd.com/"
-  //   3. The source: "websocketd.com"
-  //   4. The tag:    "Show HN" (or "Ask HN")
-  //
-  // Some links (typically Show HN, Ask HN and jobs) points to relative URLs
-  // like "item?id=...", we want to normalize those into the full URLs here.
-  //
-  // For internal links that doesn't have the Show/Ask HN tag, we will label
-  // them as "Discuss". Most of these should probably be labeled as "Job"
-  // instead, but we will correct that later.
+  //   1. The Band:   "Tyler Hopkins &#038; The Rebellion"
+  //   2. The link:   "http://normanmusicfestival.com/bands/tyler-hopkins-the-rebellion/"
+  //   3. The day:    "saturday"
+  //   4. The stage:  "Bluebonnet Bar"
+  //   5. The time:   "12:00 am"
 
-  var $title = $(".title > a", row1),
-      titleText = $title.text().trim(),
-      titleHref = $title.attr("href");
 
-  console.log('$title = ', $title);
+  var $bandTag = $(".band-title a", row1),
+      bandName = $bandTag.text().trim(),
+      link =     $bandTag.attr("href"),
+      className  = $(row1).attr('class'),
+      day =      className.split(" ")[0],
+      time =     $(".show-time", row1).text().trim(),
+      stageName =    $(".show-stage", row1).text().trim();
 
-  event.tag   = extractTag(titleText);
-  event.title = extractTitle(titleText);
-  event.url   = titleHref;
 
-  console.log('event.title = ', event.title);
 
-  if (event.url.indexOf("item?id=") === 0) {
-    event.tag = event.tag || "Discuss";
-    event.url = `https://news.ycombinator.com/${event.url}`;
-  }
+  event.bandName = bandName;
+  event.link = link;
+  event.day = day;
+  event.time = time;
+  event.stageName = stageName;
+
+
+  //if (event.url.indexOf("item?id=") === 0) {
+    //event.tag = event.tag || "Discuss";
+    //event.url = `https://news.ycombinator.com/${event.url}`;
+  //}
 
   var source = $(".title .sitebit", row1).text().trim();
 
@@ -308,20 +301,20 @@ function extractEvent(row1, row2, row3, commentRows) {
   // any of these, set the tag to "Job" and move on. For jobs, the "3 hours ago"
   // is not linked, so we have to be careful with the selectors.
 
-  var $points    = $(".subtext .score", row2),
-      $comments  = $(".subtext a:last-of-type", row2),
-      $submitter = $(".subtext a:first-of-type", row2),
-      submitted = $(".subtext", row2).text().trim();
+  //var $points    = $(".subtext .score", row2),
+      //$comments  = $(".subtext a:last-of-type", row2),
+      //$submitter = $(".subtext a:first-of-type", row2),
+      //submitted = $(".subtext", row2).text().trim();
 
-  if ($points.length > 0 && $comments.length > 0 && $submitter.length > 0) {
-    event.points    = toInt( $points.text() );
-    event.submitter = $submitter.text().trim();
-    event.submitted = extractSubmitted( submitted );
-    event.commentsCount = toInt( $comments.text() );
-  } else {
-    event.tag = "Job";
-    event.submitted = extractSubmitted( submitted );
-  }
+  //if ($points.length > 0 && $comments.length > 0 && $submitter.length > 0) {
+    //event.points    = toInt( $points.text() );
+    //event.submitter = $submitter.text().trim();
+    //event.submitted = extractSubmitted( submitted );
+    //event.commentsCount = toInt( $comments.text() );
+  //} else {
+    //event.tag = "Job";
+    //event.submitted = extractSubmitted( submitted );
+  //}
 
   // Discussion threads like Ask HN has a body of text attached to them. We can
   // only get that if we are on the item page (as opposed to the index pages).
@@ -335,17 +328,15 @@ function extractEvent(row1, row2, row3, commentRows) {
   //   </td>
   //
 
-  if (row3) {
-    event.body = extractBody( $(row3).find("td:has(p)").contents() );
-  }
+  //if (row3) {
+    //event.body = extractBody( $(row3).find("td:has(p)").contents() );
+  //}
 
   // Obviously we will only have this if we are on the item page.
 
-  if (event.commentsCount !== null && commentRows) {
-    comments = extractComments(event, commentRows);
-  }
-
-  console.log('event = ', event);
+  //if (event.commentsCount !== null && commentRows) {
+    //comments = extractComments(event, commentRows);
+  //}
 
   return [event, comments];
 }
@@ -360,30 +351,27 @@ export function extractSingle(doc) {
 }
 
 export function extractArray(doc) {
-  console.log('calling extractArray!');
   var meta = {},
       events = [],
       payload = { meta, events };
 
-  try {
-    meta.next = $("#hnmain tr:last-child a:contains(More)", doc).attr("href").split(/=|&/)[1];
-  } catch(e) {
-    meta.next = null;
-  }
+  //try {
+    //meta.next = $("#hnmain tr:last-child a:contains(More)", doc).attr("href").split(/=|&/)[1];
+  //} catch(e) {
+    //meta.next = null;
+  //}
 
-  var rows = toArray( $("#hnmain table:eq(1) tr:has(.title):not(:last-child)", doc) );
+  var rows = toArray( $("ul.schedule-list li", doc) );
 
   rows.forEach( row => {
-    events.push( extractEvent(row, row.nextElementSibling)[0] );
+    events.push( extractEvent(row)[0] );
   });
-
-  console.log("payload = ", payload);
 
   return payload;
 }
 
 export function isError(doc) {
-  return $("#hnmain table:eq(1) tr", doc).length === 0;
+  return $("ul.schedule-list li", doc).length === 0;
 }
 
 export function parentID(doc) {

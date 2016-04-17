@@ -28,7 +28,7 @@ module.exports = function(environment) {
   }
 
   ENV.APP.CORS_PROXY = 'https://cors-anywhere.herokuapp.com';
-  ENV.APP.NMF_HOST = 'https://news.ycombinator.com';
+  ENV.APP.NMF_HOST = 'http://normanmusicfestival.com';
 
   if (environment === 'test') {
     // Testem prefers this...

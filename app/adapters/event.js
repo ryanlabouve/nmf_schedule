@@ -58,7 +58,7 @@ export default DS.RESTAdapter.extend({
       xhr.onload = () => {
         console.log('in onload');
         if (isError(xhr.response)) {
-          console.log('isError');
+          console.log('isError', xhr.response);
           Ember.run(null, reject, "Not found");
         } else {
           console.log('in else');
@@ -79,32 +79,32 @@ export default DS.RESTAdapter.extend({
     console.log('calling urlForQuery', filter, page);
     var url;
 
-    filter = filter || "latest";
+    filter = filter || "schedule";
 
     switch (filter) {
-      case "front-page":
-        url = "news";
+      //case "front-page":
+        //url = "news";
+        //break;
+
+      case "schedule":
+        url = "schedule";
         break;
 
-      case "latest":
-        url = "newest";
-        break;
+      //case "active":
+        //url = "active";
+        //break;
 
-      case "active":
-        url = "active";
-        break;
+      //case "show-hn":
+        //url = "show";
+        //break;
 
-      case "show-hn":
-        url = "show";
-        break;
+      //case "ask-hn":
+        //url = "ask";
+        //break;
 
-      case "ask-hn":
-        url = "ask";
-        break;
-
-      case "jobs":
-        url = "jobs";
-        break;
+      //case "jobs":
+        //url = "jobs";
+        //break;
 
       default:
         throw "Unknown filter: " + filter;
