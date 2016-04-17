@@ -1,0 +1,159 @@
+.schedule {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.schedule .day-nav {
+    margin-bottom: 0;
+    height: auto;
+    padding-top: 10px;
+
+    border-bottom: 1px solid #D2CDCC;
+}
+
+.schedule > .liquid-container {
+    flex: 1;
+    position: relative;
+}
+
+.back-list-item {
+    float: left;
+    margin-right: -65px !important;
+}
+
+.back-link {
+    padding: 20px;
+}
+
+.back-icon {
+    height: 24px;
+}
+
+.schedule > .liquid-container {
+    flex: 1;
+    position: relative;
+}
+
+.schedule > .liquid-container > .liquid-child {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+}
+
+.schedule > .liquid-container > .liquid-child > .liquid-container {
+    height: 100%;
+    width: 100%;
+}
+
+.schedule > .liquid-container > .liquid-child > .liquid-container > .liquid-child {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.memory-scroll {
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Disable hover on mobile devices */
+@media (hover:none) {
+  .schedule ol li div.row:hover {
+    background: none;
+  }
+}
+
+/* This min-width number is nuts, but matches the other ones */
+@media screen and (min-width: 64.0625em) {
+  header .logo {
+    position: absolute;
+  }
+}
+
+header .logo:after {
+    content:'';
+    z-index:-1;
+    opacity:0;
+    position:relative;
+    top:-.6em;
+    left:.55em;
+    background-image:url("../images/tomster.png");
+    width:2.5em;
+    height:2.5em;
+    background-repeat:no-repeat;
+    transform:translateY(1.875em);
+    transition:all 200ms
+}
+
+header .logo.reveal:after {
+    display:block;
+    opacity:1;
+    transform:translateY(0em);
+}
+
+@media all and (min-device-pixel-ratio: 1.5){
+    header .logo::after{
+        background-image:url("../images/tomster@2x.png");
+        background-size:100% auto
+    }
+}
+
+@media screen and (min-width: 40.0625em) {
+  h2 {
+    margin: 0 230px;
+  }
+}
+
+.talk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.talk > div {
+    line-height: 1.5em;
+}
+
+.talk p {
+    margin: 0.75em;
+}
+
+.talk h3 {
+    margin-top: 0.75em;
+}
+
+.talk img {
+    width: 120px;
+    height: 120px;
+    margin-top: 0.75em;
+}
+
+p + .is-interested-button {
+    margin-top: 4px;
+}
+
+h3 + .is-interested-button {
+    margin-top: 8px;
+}
+
+.is-interested-button.nope:not(:hover) {
+    background-color: lightblue;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
