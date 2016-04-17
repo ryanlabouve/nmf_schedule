@@ -18,8 +18,7 @@ export default function() {
     this.toModel(function(newDay, oldDay) {
       return dayIsLessThan(newDay, oldDay);
     }),
-    this.reverse('to-right'),
-    this.debug(true)
+    this.reverse('to-right')
   );
 
   this.transition(
@@ -31,19 +30,18 @@ export default function() {
 
   this.transition(
     this.fromRoute('day.index'),
-    this.toRoute('day.talk'),
+    this.toRoute('day.event'),
     this.use('explode', {
-      matchBy: 'data-photo-id',
+      matchBy: 'data-event-id',
       use: 'fly-to'
     }, {
       use: 'to-up'
     }),
     this.reverse('explode', {
-      matchBy: 'data-photo-id',
+      matchBy: 'data-event-id',
       use: 'fly-to'
     }, {
       use: 'to-down'
     })
-
   );
 }

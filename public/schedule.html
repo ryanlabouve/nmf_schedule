@@ -1,0 +1,6711 @@
+
+
+<!DOCTYPE HTML>
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]--> 
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]--> 
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]--> 
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]--> 
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<title>Norman Music Festival  |  Free. Original. Oklahoma. | Bands</title>
+	<meta charset="UTF-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="pingback" href="" />
+	<link rel="shortcut icon" href="http://normanmusicfestival.com/wp-content/themes/NMF/img/favicon.ico"/>
+	
+	<!--[if lt IE 9]>
+		<script src="http://normanmusicfestival.com/wp-content/themes/NMF/js/html5shiv.js"></script>
+	<![endif]-->
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-49841106-1', 'normanmusicfestival.com');
+	  ga('send', 'pageview');
+	
+	</script>
+
+	<link rel="alternate" type="application/rss+xml" title="Norman Music Festival  |  Free. Original. Oklahoma. &raquo; Bands Feed" href="http://normanmusicfestival.com/bands/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"wpemoji":"http:\/\/normanmusicfestival.com\/wp-includes\/js\/wp-emoji.js?ver=4.4.2","twemoji":"http:\/\/normanmusicfestival.com\/wp-includes\/js\/twemoji.js?ver=4.4.2"}};
+			( function( window, document, settings ) {
+	var src, ready;
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "simple" or "flag" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var canvas = document.createElement( 'canvas' ),
+			context = canvas.getContext && canvas.getContext( '2d' ),
+			stringFromCharCode = String.fromCharCode,
+			tone;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		if ( 'flag' === type ) {
+			/*
+			 * This works because the image will be one of three things:
+			 * - Two empty squares, if the browser doesn't render emoji
+			 * - Two squares with 'A' and 'U' in them, if the browser doesn't render flag emoji
+			 * - The Australian flag
+			 *
+			 * The first two will encode to small images (1-2KB data URLs), the third will encode
+			 * to a larger image (4-5KB data URL).
+			 */
+			context.fillText( stringFromCharCode( 55356, 56806, 55356, 56826 ), 0, 0 );
+			return canvas.toDataURL().length > 3000;
+		} else if ( 'diversity' === type ) {
+			/*
+			 * This tests if the browser supports the Emoji Diversity specification, by rendering an
+			 * emoji with no skin tone specified (in this case, Santa). It then adds a skin tone, and
+			 * compares if the emoji rendering has changed.
+			 */
+			context.fillText( stringFromCharCode( 55356, 57221 ), 0, 0 );
+			tone = context.getImageData( 16, 16, 1, 1 ).data.toString();
+			context.fillText( stringFromCharCode( 55356, 57221, 55356, 57343 ), 0, 0 );
+			// Chrome has issues comparing arrays, so we compare it as a  string, instead.
+			return tone !== context.getImageData( 16, 16, 1, 1 ).data.toString();
+		} else {
+			if ( 'simple' === type ) {
+				/*
+				 * This creates a smiling emoji, and checks to see if there is any image data in the
+				 * center pixel. In browsers that don't support emoji, the character will be rendered
+				 * as an empty square, so the center pixel will be blank.
+				 */
+				context.fillText( stringFromCharCode( 55357, 56835 ), 0, 0 );
+			} else {
+				/*
+				 * To check for Unicode 8 support, let's try rendering the most important advancement
+				 * that the Unicode Consortium have made in years: the burrito.
+				 */
+				context.fillText( stringFromCharCode( 55356, 57135 ), 0, 0 );
+			}
+			return context.getImageData( 16, 16, 1, 1 ).data[0] !== 0;
+		}
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	settings.supports = {
+		simple:    browserSupportsEmoji( 'simple' ),
+		flag:      browserSupportsEmoji( 'flag' ),
+		unicode8:  browserSupportsEmoji( 'unicode8' ),
+		diversity: browserSupportsEmoji( 'diversity' )
+	};
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.simple || ! settings.supports.flag || ! settings.supports.unicode8 || ! settings.supports.diversity ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fonts-css'  href='http://normanmusicfestival.com/wp-content/themes/NMF/css/fonts.css?ver=4.4.2' type='text/css' media='screen' />
+<link rel='stylesheet' id='screen-css'  href='http://normanmusicfestival.com/wp-content/themes/NMF/style.css?ver=4.4.2' type='text/css' media='screen' />
+<script type='text/javascript' src='http://normanmusicfestival.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://normanmusicfestival.com/wp-includes/js/jquery/jquery-migrate.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://normanmusicfestival.com/wp-content/themes/NMF/js/site.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://normanmusicfestival.com/wp-content/themes/NMF/js/isotope.pkgd.min.js?ver=4.4.2'></script>
+<link rel='https://api.w.org/' href='http://normanmusicfestival.com/wp-json/' />
+<meta name="generator" content="WordPress 4.4.2" />
+</head>
+<body class="archive post-type-archive post-type-archive-ty_nmf_bands">
+<header class="page-header inside">
+	<div class="width">
+		<nav class="top-nav"> 
+			<ul id="primary" class="menu"><li id="menu-item-628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-628"><a href="/about">Info</a>
+<ul class="sub-menu">
+	<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="http://normanmusicfestival.com/info/about/">About</a></li>
+	<li id="menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="http://normanmusicfestival.com/info/map-directions/">Map &#038; Directions</a></li>
+	<li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a href="http://normanmusicfestival.com/info/what-not-to-bring/">What Not to Bring</a></li>
+	<li id="menu-item-629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629"><a href="http://normanmusicfestival.com/info/faq/">F.A.Q.</a></li>
+	<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="http://normanmusicfestival.com/info/contact/">Contact</a></li>
+	<li id="menu-item-1230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1230"><a href="http://normanmusicfestival.com/info/media/">Media</a></li>
+	<li id="menu-item-1752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1752"><a href="http://normanmusicfestival.com/info/food/">Food</a></li>
+</ul>
+</li>
+<li id="menu-item-630" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-630"><a href="/apply">Participate</a>
+<ul class="sub-menu">
+	<li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557"><a href="http://normanmusicfestival.com/apply/">Bands</a></li>
+	<li id="menu-item-310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-310"><a href="http://normanmusicfestival.com/apply/vendors/">Vendors</a></li>
+	<li id="menu-item-1524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1524"><a href="http://normanmusicfestival.com/apply/education-grants/">Education Grants</a></li>
+</ul>
+</li>
+<li id="menu-item-296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-296"><a href="http://normanmusicfestival.com/support/">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304"><a href="http://normanmusicfestival.com/support/vip/">VIP</a></li>
+	<li id="menu-item-305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305"><a href="http://normanmusicfestival.com/support/sponsor/">Sponsor</a></li>
+	<li id="menu-item-306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306"><a href="http://normanmusicfestival.com/support/volunteer/">Volunteer</a></li>
+</ul>
+</li>
+</ul>		</nav>
+		<section class="hero">
+			<h1 class="logo"><a href="http://normanmusicfestival.com"><img src="http://normanmusicfestival.com/wp-content/themes/NMF/img/NMF9_logo.png" alt="Norman Music Festival" width="150"/></a></h1>
+		</section>
+	</div>
+	
+	<div class="sub-hero inside">
+		<div class="width clearfix">
+			<div class="column three">
+				<h4>Norman, OK</h4>
+			</div>
+			<div class="column three">
+				<h4>April 21-23, 2016</h4>
+			</div>
+			<div class="column three last">
+				<h4><span>Free</span> to Public</h4>
+			</div>
+			
+		</div>
+	</div>
+	
+</header>
+
+<section class="schedule-content">
+	<section class="schedule-header">
+		<div class="width">
+			<h3>Schedule</h3>
+		</div>
+	</section>
+	
+	<section class="schedule-section">
+		<div class="width">
+		
+			<div class="schedule-sorter clearfix">
+				<div class="day-sorter">
+					<ul>
+						<li><a class="top-level-sorter" >Choose a day<span class="icon-arrow_down"></span></a>
+							<ul class="filter-group" data-filter-group="day" data-toggle="closed">
+								<li><a class="filter-item" data-filter=".thursday">Thursday</a></li>
+								<li><a class="filter-item" data-filter=".friday">Friday</a></li>
+								<li><a class="filter-item" data-filter=".saturday">Saturday</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="stage-sorter">
+					<ul>
+						<li><a class="top-level-sorter" >Choose a stage<span class="icon-arrow_down"></span></a>
+							<ul class="filter-group" data-filter-group="stage" data-toggle="closed">
+																
+								<li><a class="filter-item" data-filter="*">Show All</a></li>
+																									<li>
+										<a class="filter-item fowler-toyota-main-stage" data-filter=".fowler-toyota-main-stage">Fowler Toyota Main Stage</a>
+									</li>
+																	<li>
+										<a class="filter-item bud-light-depot-stage" data-filter=".bud-light-depot-stage">Bud Light Depot Stage</a>
+									</li>
+																	<li>
+										<a class="filter-item fowler-honda-gray-street-stage" data-filter=".fowler-honda-gray-street-stage">Fowler Honda Gray Street Stage</a>
+									</li>
+																	<li>
+										<a class="filter-item coop-ale-works-opolis-stage" data-filter=".coop-ale-works-opolis-stage">Coop Ale Works Opolis Stage</a>
+									</li>
+																	<li>
+										<a class="filter-item opolis-indoor-" data-filter=".opolis-indoor-">Opolis (indoor)</a>
+									</li>
+																	<li>
+										<a class="filter-item sooner-theatre" data-filter=".sooner-theatre">Sooner Theatre</a>
+									</li>
+																	<li>
+										<a class="filter-item wiggle-safe-family-stage" data-filter=".wiggle-safe-family-stage">Wiggle Safe Family Stage</a>
+									</li>
+																	<li>
+										<a class="filter-item brewhouse" data-filter=".brewhouse">Brewhouse</a>
+									</li>
+																	<li>
+										<a class="filter-item guestroom-records" data-filter=".guestroom-records">Guestroom Records</a>
+									</li>
+																	<li>
+										<a class="filter-item bluebonnet-bar" data-filter=".bluebonnet-bar">Bluebonnet Bar</a>
+									</li>
+																	<li>
+										<a class="filter-item red-brick-bar" data-filter=".red-brick-bar">Red Brick Bar</a>
+									</li>
+																	<li>
+										<a class="filter-item michelangelo-8217-s-indoor-" data-filter=".michelangelo-8217-s-indoor-">Michelangelo&#8217;s (indoor)</a>
+									</li>
+																	<li>
+										<a class="filter-item songwriter-alley-stage" data-filter=".songwriter-alley-stage">Songwriter Alley Stage</a>
+									</li>
+																	<li>
+										<a class="filter-item abner-8217-s-ale-house" data-filter=".abner-8217-s-ale-house">Abner&#8217;s Ale House</a>
+									</li>
+																	<li>
+										<a class="filter-item loveworks" data-filter=".loveworks">Loveworks</a>
+									</li>
+																	<li>
+										<a class="filter-item sandalwood-038-sage-indoor-" data-filter=".sandalwood-038-sage-indoor-">Sandalwood &#038; Sage (indoor)</a>
+									</li>
+																	<li>
+										<a class="filter-item sandalwood-038-sage-outdoor-" data-filter=".sandalwood-038-sage-outdoor-">Sandalwood &#038; Sage (outdoor)</a>
+									</li>
+																	<li>
+										<a class="filter-item main-038-peters-spectacle-stage" data-filter=".main-038-peters-spectacle-stage">Main &#038; Peters Spectacle Stage</a>
+									</li>
+																	<li>
+										<a class="filter-item stash" data-filter=".stash">STASH</a>
+									</li>
+																	<li>
+										<a class="filter-item bison-witches" data-filter=".bison-witches">Bison Witches</a>
+									</li>
+																	<li>
+										<a class="filter-item puebla-indoors-" data-filter=".puebla-indoors-">Puebla (indoors)</a>
+									</li>
+																	<li>
+										<a class="filter-item puebla-patio-" data-filter=".puebla-patio-">Puebla (patio)</a>
+									</li>
+																	<li>
+										<a class="filter-item red-brick-bar-outdoors-" data-filter=".red-brick-bar-outdoors-">Red Brick Bar (outdoors)</a>
+									</li>
+																							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			
+			
+						<div id="no_results">
+				Sorry, couldn't find anything there. <br /> Please choose a different day/stage.
+			</div>
+			<ul class="schedule-list">
+												
+				
+				<li class="saturday bluebonnet-bar after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/tyler-hopkins-the-rebellion/">Tyler Hopkins &#038; The Rebellion</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday brewhouse after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ripple-green/">Ripple Green</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bluebonnet-bar after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ali-harter/">Ali Harter</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday abner-8217-s-ale-house after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/michael-huff/">Michael Huff</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday red-brick-bar after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:30 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-hitt-boyz/">The Hitt Boyz</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday red-brick-bar after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:30 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/cosmic-wool/">Cosmic Wool</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:30 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/festival-city-saints/">Festival City Saints</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bluebonnet-bar after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/andy-adams/">Andy Adams</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday brewhouse after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/wurly-birds/">The Wurly Birds</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ltz/">LTZ</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-trading-co/">The Trading Co.</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sandalwood-038-sage-outdoor-  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/max-ridgway-trio/">Max Ridgway Trio</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (outdoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:20 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/judith/">Judith</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/allie-lauren/">Allie Lauren</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/equilibrium/">Equilibrium</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sandalwood-038-sage-outdoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-indigos/">The Indigos</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (outdoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:10 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jared-deck/">Jared Deck</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/white-mule/">White Mule</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/cutter-elliott/">Cutter Elliott</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/chase-kerby/">Chase Kerby &#038; the Villains</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sandalwood-038-sage-outdoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/rum-fellows/">Rum Fellows</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (outdoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/beau-mansfield/">Beau Mansfield</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/kalo/">KALO</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/lauryn-hardiman/">Lauryn Hardiman</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/sardashhh/">Sardashhh</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/desi-and-cody/">Desi and Cody</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jude-northcutt/">Jude Northcutt</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jody-miller/">Jody Miller</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-fabulous-minx/">The Fabulous Minx</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/cosmostanza/">Cosmostanza</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/great-american-jug-band/">Great American Jug Band</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/lord-buffalo/">Lord Buffalo</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/forum/">Forum</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sandalwood-038-sage-outdoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/drum-circle-with-jahruba/">Drum Circle with Jahruba</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (outdoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jensen-stenberg/">Jensen Stenberg</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday guestroom-records  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/poolboy/">Poolboy</a>
+						</div>
+						
+						<div class="show-stage">
+							Guestroom Records						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/wicked-shimmies/">Wicked Shimmies</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/admirals/">Admirals</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/akiba/">Akiba</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/woozy/">Woozy</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday guestroom-records  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/cucumber-the-suntans/">Cucumber &#038; the Suntans</a>
+						</div>
+						
+						<div class="show-stage">
+							Guestroom Records						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sandalwood-038-sage-outdoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-jah-mystics/">The JAH Mystics</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (outdoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/garrett-holt/">Garrett Holt</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/kestrel-kite/">Kestrel &#038; Kite</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/and-the-black-feathers/">&#8230;and the Black Feathers</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday guestroom-records  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-shutdown-shutouts/">The Shutdown Shutouts</a>
+						</div>
+						
+						<div class="show-stage">
+							Guestroom Records						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/nuns/">Nuns</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/skating-polly/">Skating Polly</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/shawn-james-the-shapeshifters/">Shawn James &#038; the Shapeshifters</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sandalwood-038-sage-outdoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-royal-jelly/">The Royal Jelly</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (outdoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/benjimanji/">Benjimanji</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/saige-cross/">Saige Cross</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/los-eskeletos/">Los Eskeletos</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday guestroom-records  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/hidden-ritual/">Hidden Ritual</a>
+						</div>
+						
+						<div class="show-stage">
+							Guestroom Records						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ghost-lake/">Ghost Lake</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/bob-deupree/">Bob Deupree</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/matthew-stratton/">Matthew Stratton</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/limp-wizurdz/">Limp Wizurdz</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sandalwood-038-sage-outdoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/paseo-street-walkers/">Paseo Street Walkers</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (outdoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/s-reidy/">S.Reidy</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/nobunny/">Nobunny</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/samantha-crain/">Samantha Crain</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday sandalwood-038-sage-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/felina-rivera/">Felina Rivera</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/mary-ann/">Mary Ann</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday guestroom-records  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:15 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/psychic-heat/">Psychic Heat</a>
+						</div>
+						
+						<div class="show-stage">
+							Guestroom Records						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:20 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/teflo/">Teflo $</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/wildings/">Wildings</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/trap-queen/">Trap Queen</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/pagiins/">Pagiins</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jarvix/">Jarvix</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/hola-beach/">Hola Beach</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/sun-riah/">Sun Riah</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:40 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/worm/">WoRm</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/tom-marshall/">Tom Marshall</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/who-the-fucks/">Who &#038; the Fucks</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/fred-hill/">Fred Hill</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sandalwood-038-sage-outdoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/bungalouski/">Bungalouski</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (outdoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/foxburrows/">Foxburrows</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/carol-morgan/">Carol Morgan</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jacob-tovar-and-the-saddle-tramps/">Jacob Tovar and the Saddle Tramps</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/young-dv/">Young DV</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sandalwood-038-sage-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ladies-at-play/">Ladies at Play</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday sandalwood-038-sage-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/evan-floyd/">Evan Floyd</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jade-castle/">Jade Castle</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/similarity/">Similarity</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/crutch/">Crutch</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/kim-bethune/">Kim Bethune</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/t-z-wright/">T.Z. Wright</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:15 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/open-mike-eagle/">Open Mike Eagle</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/brother-gruesome/">Brother Gruesome</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/lizard-police/">Lizard Police</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/lonemoon/">LoneMoon</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/heartbreak-rodeo/">Heartbreak Rodeo</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/kyle-reid-the-low-swingin-chariots/">Kyle Reid &#038; the Low Swingin&#8217; Chariots</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/algebra/">Algebra</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/maggie-mcclure/">Maggie McClure</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/andy-sydow/">Andy Sydow</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ken-pomeroy/">Ken Pomeroy</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday guestroom-records  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/honey/">Honey</a>
+						</div>
+						
+						<div class="show-stage">
+							Guestroom Records						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/horse-thief/">Horse Thief</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sandalwood-038-sage-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jerrod-beck/">Jerrod Beck</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday sandalwood-038-sage-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/wess-mcmichael/">Wess McMichael</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/grant-adams/">Grant Adams</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/paxton-pennington/">Paxton Pennington</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/costello/">Costello</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/steph-simon/">Steph Simon</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/dj-jonny-tsunami/">DJ Jonny Tsunami</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/alyse/">Alyse</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/american-hate/">American Hate</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/nigel-moore/">Nigel Moore</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:15 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/darden-pierce/">Darden Pierce</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:15 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/frank-lawrence/">Frank Lawrence</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:15 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/naturalist/">Naturalist</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/haniwa/">Haniwa</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/dboyd/">DBOYD</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/small-black/">Small Black</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/brandon-romans/">Brandon Romans</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday guestroom-records  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ghetto-ghouls/">Ghetto Ghouls</a>
+						</div>
+						
+						<div class="show-stage">
+							Guestroom Records						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/anchor-the-girl/">Anchor the Girl</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ab/">A/B</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jvs-fillin-station/">JV&#8217;s Fillin&#8217; Station</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/sierra-rose/">Sierra Rose</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jab/">JAB</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/bloody-knives/">Bloody Knives</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/dave-mcdaniel/">Dave McDaniel</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/brad-fielder-trio/">Brad Fielder Trio</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/plain-speak/">Plain Speak</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/zie/">Zie</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/rozlyn-zora/">Rozlyn Zora</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/tucker-mcintire/">Tucker McIntire</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:15 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/nikki-lane/">Nikki Lane</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/klipspringer/">Klipspringer</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/miillie-mesh/">Miillie Mesh</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-dizzease/">The Dizzease</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ester-drang/">Ester Drang</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/masterhand/">Masterhand</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/tom-crider/">Tom Crider</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/peter-erickson/">Peter Erickson</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/hayden-bedwell/">Hayden Bedwell</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jabee/">Jabee</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-stockyard-playboys/">The Stockyard Playboys</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-copperheads/">The Copperheads</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/beach-language/">Beach Language</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/christophe-murdock/">Christophe Murdock</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/nick-williams/">Nick Williams</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/cloud-nothings/">Cloud Nothings</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/gabriel-knight-hancock/">Gabriel Knight Hancock</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/tanner-miller/">Tanner Miller</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-pizza-thieves/">The Pizza Thieves</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/limber-limbs/">Limber Limbs</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ottrepop/">Ottrepop</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/gazzo/">Gazzo</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/kaitlin-butts/">Kaitlin Butts</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/shawn-gunter/">Shawn Gunter</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/evin-brady/">Evin Brady</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-coathangers/">The Coathangers</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/milo/">Milo</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/joe-mack/">Joe Mack</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/rock-paper-gary/">Rock Paper Gary</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-disposables/">The Disposables</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday songwriter-alley-stage  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/glowbead/">Glowbead</a>
+						</div>
+						
+						<div class="show-stage">
+							Songwriter Alley Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday songwriter-alley-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/big-hill-cullen/">Big Hill Cullen</a>
+						</div>
+						
+						<div class="show-stage">
+							Songwriter Alley Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday songwriter-alley-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jim-madsen-the-big-train-string-quartet/">Jim Madsen &#038; The Big Train String Quartet</a>
+						</div>
+						
+						<div class="show-stage">
+							Songwriter Alley Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday songwriter-alley-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/elizabeth-speegle-band/">Elizabeth Speegle Band</a>
+						</div>
+						
+						<div class="show-stage">
+							Songwriter Alley Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday songwriter-alley-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/kill-the-reflection/">Kill the Reflection</a>
+						</div>
+						
+						<div class="show-stage">
+							Songwriter Alley Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday songwriter-alley-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/daddy-love-band/">Daddy Love Band</a>
+						</div>
+						
+						<div class="show-stage">
+							Songwriter Alley Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday songwriter-alley-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/panhandlers-the-cosmic-lane/">Panhandlers &#038; the Cosmic Lane</a>
+						</div>
+						
+						<div class="show-stage">
+							Songwriter Alley Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/john-darling/">John Darling</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday songwriter-alley-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/audio-complex/">Audio Complex</a>
+						</div>
+						
+						<div class="show-stage">
+							Songwriter Alley Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday opolis-indoor- after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:30 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/gum/">Gum</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday loveworks  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/naeco/">NAECO</a>
+						</div>
+						
+						<div class="show-stage">
+							Loveworks						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday loveworks  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/krypticate/">Krypticate</a>
+						</div>
+						
+						<div class="show-stage">
+							Loveworks						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday loveworks  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/chameleon-souls/">Chameleon Souls</a>
+						</div>
+						
+						<div class="show-stage">
+							Loveworks						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-bourgeois/">The Bourgeois</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/lost-empires/">Lost Empires</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/power-trip/">Power Trip</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/medicine-brother/">Medicine Brother</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/kite-flying-robot/">Kite Flying Robot</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/autumn-ray/">Autumn Ray</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/buffalo-rogers/">Buffalo Rogers</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/porch-mice/">Porch Mice</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jose-hernandez/">Jose Hernandez &#038; the Black Magic Waters</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/mike-rae/">Mike Rae</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sooner-theatre  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/addison-baker/">Addison Baker</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/stranded-at-the-station/">Stranded at the Station</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-strange-machine/">The Strange Machine</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday red-brick-bar  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/pulpit-red/">Pulpit Red</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/danny-hilliard-band/">Danny Hilliard Band</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/endless-forms/">Endless Forms</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/kykuit/">KYKUIT</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/space4lease/">Space4Lease</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jms/">JMS</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:40 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/frank-black/">Frank Black</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/hannah-wolff/">Hannah Wolff</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday   ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/taylor-rapp/">Taylor Rapp</a>
+						</div>
+						
+						<div class="show-stage">
+													</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-lunar-laugh/">The Lunar Laugh</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/junebug-spade/">Junebug Spade</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/cedres/">Cedres</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/travis-linville/">Travis Linville</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/bc-the-big-rig/">BC &#038; the Big Rig</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday abner-8217-s-ale-house  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/darren-cipponeri/">Darren Cipponeri</a>
+						</div>
+						
+						<div class="show-stage">
+							Abner&#8217;s Ale House						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/elms/">Elms</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/helen-kelter-skelter/">Helen Kelter Skelter</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/deerpeople/">Deerpeople</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/lazy-rooster-rhythm-co/">Lazy Rooster Rhythm Co.</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/psychotic-reaction/">Psychotic Reaction</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday red-brick-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/nebulae/">Nebulae</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/wallclouds/">Wallclouds</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/otakunauts/">Otakunauts</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday wiggle-safe-family-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/norman-music-institute/">Norman Music Institute Students</a>
+						</div>
+						
+						<div class="show-stage">
+							Wiggle Safe Family Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday loveworks  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/norman-music-institute-bands/">Norman Music Institute Bands</a>
+						</div>
+						
+						<div class="show-stage">
+							Loveworks						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday wiggle-safe-family-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/sooner-theater-performers/">The Studio of The Sooner Theatre</a>
+						</div>
+						
+						<div class="show-stage">
+							Wiggle Safe Family Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/oklahoma-cloud-factory/">Oklahoma Cloud Factory</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday loveworks  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/mcmichael-music-showcase/">McMichael Music Showcase</a>
+						</div>
+						
+						<div class="show-stage">
+							Loveworks						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/bradchad-porter-comedian/">BradChad Porter (comedian)</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/spencer-hicks-comedian/">Spencer Hicks (comedian)</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ryan-drake-comedian/">Ryan Drake (comedian)</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/cameron-buchholtz-comedian/">Cameron Buchholtz (comedian)</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/josh-lathe-comedian/">Josh Lathe (comedian)</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/brett-james/">Brett James (comedian)</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/alex-sanchez-comedian/">Alex Sanchez (comedian)</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/amanda-stonebarger-comedian/">Amanda Stonebarger (comedian)</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/madison-allen-comedian/">Madison Allen (comedian)</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/tony-romanello-and-the-black-jackets/">Tony Romanello and the Black Jackets</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor- after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-daddyos/">The Daddyo&#8217;s</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday opolis-indoor- after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/cherry-death/">Cherry Death</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday puebla-indoors- after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/weatherpeople/">WeatherPeople</a>
+						</div>
+						
+						<div class="show-stage">
+							Puebla (indoors)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday puebla-patio- after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/t-gram-and-dat-funky-fam/">T Gram and Dat Funky Fam</a>
+						</div>
+						
+						<div class="show-stage">
+							Puebla (patio)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/patron-aints/">Patron Aints</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor- after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/creep-city/">Creep City</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday wiggle-safe-family-stage  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/microgiant/">Microgiant</a>
+						</div>
+						
+						<div class="show-stage">
+							Wiggle Safe Family Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  noon">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/katie-williams/">Katie Williams</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/harumph/">Harumph</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/los-caminos/">Los Caminos</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jaxson-haldane/">Jaxson Haldane</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-conflation-congregation/">The Conflation Congregation</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday main-038-peters-spectacle-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/oklahoma-parkour/">Oklahoma Parkour</a>
+						</div>
+						
+						<div class="show-stage">
+							Main &#038; Peters Spectacle Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															2:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/magnificent-bird/">Magnificent Bird</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-toyota-main-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/traindodge/">Traindodge</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Toyota Main Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday main-038-peters-spectacle-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/mystical-hips-dance-troupe/">Mystical Hips Dance Troupe</a>
+						</div>
+						
+						<div class="show-stage">
+							Main &#038; Peters Spectacle Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/caleb-mcgee-band/">Caleb McGee &#038; the Underdogs</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/annie-oakley/">Annie Oakley</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday main-038-peters-spectacle-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															3:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/juggle-whatever/">Juggle Whatever</a>
+						</div>
+						
+						<div class="show-stage">
+							Main &#038; Peters Spectacle Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/militantxmindz/">MilitantxMindz</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/softaware/">Softaware</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bud-light-depot-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/oil-boom/">Oil Boom</a>
+						</div>
+						
+						<div class="show-stage">
+							Bud Light Depot Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday wiggle-safe-family-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/sugar-free-allstars/">Sugar Free Allstars</a>
+						</div>
+						
+						<div class="show-stage">
+							Wiggle Safe Family Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/john-calvin-abney/">John Calvin Abney</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/fiawna-forte/">Fiawna Forte</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday main-038-peters-spectacle-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															4:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/aalim-bellydance-academy/">Aalim Bellydance Academy</a>
+						</div>
+						
+						<div class="show-stage">
+							Main &#038; Peters Spectacle Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/labrys/">Labrys</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:20 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/grand-national/">Grand National</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/bowlsey/">Bowlsey</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/beau-jennings-the-tigers/">Beau Jennings &#038; the Tigers</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday main-038-peters-spectacle-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															5:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/norman-pole-dance-with-teaze-dance-and-fitness/">Norman Pole Dance with Teaze Dance and Fitness</a>
+						</div>
+						
+						<div class="show-stage">
+							Main &#038; Peters Spectacle Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/bayonne/">Bayonne</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/lincka/">Lincka</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/weak-knees/">Weak Knees</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/harpa/">Harpa</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday sandalwood-038-sage-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/dust-bowl-refugees/">Dust Bowl Refugees</a>
+						</div>
+						
+						<div class="show-stage">
+							Sandalwood &#038; Sage (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday main-038-peters-spectacle-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/bang-bang-set-1/">Bang Bang</a>
+						</div>
+						
+						<div class="show-stage">
+							Main &#038; Peters Spectacle Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/celadon-city/">Celadon City</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/prettyboy/">Prettyboy</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/daniel-walcher/">Daniel Walcher</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/tonne/">Tonne</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/student-film/">Student Film</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/rachel-brashear/">Rachel Brashear</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/sports/">Sports</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday puebla-indoors-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/dj-sethalosha/">DJ Sethalosha</a>
+						</div>
+						
+						<div class="show-stage">
+							Puebla (indoors)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/feel-spectres/">Feel Spectres</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/calabar/">Calabar</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/josh-sallee/">Josh Sallee</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/sex-snobs/">Sex Snobs</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/darku-j/">Darku J</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday coop-ale-works-opolis-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/poolboy-2/">Poolboy</a>
+						</div>
+						
+						<div class="show-stage">
+							Coop Ale Works Opolis Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday puebla-indoors-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/dj-timmy-b/">DJ Timmy B</a>
+						</div>
+						
+						<div class="show-stage">
+							Puebla (indoors)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday puebla-patio-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/olympus-mons/">Olympus Mons</a>
+						</div>
+						
+						<div class="show-stage">
+							Puebla (patio)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/team-nightstand/">Team Nightstand</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/locust-avenue/">Locust Avenue</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/crystal-vision/">Crystal Vision</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday puebla-indoors-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/sick-nick/">Sick Nick</a>
+						</div>
+						
+						<div class="show-stage">
+							Puebla (indoors)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/ben-kilgore/">Ben Kilgore</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/phantom-head/">Phantom Head</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/applied-music-program/">Applied Music Program</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday sooner-theatre  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/tallows/">Tallows</a>
+						</div>
+						
+						<div class="show-stage">
+							Sooner Theatre						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday puebla-patio-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/frequency-jones/">Frequency Jones</a>
+						</div>
+						
+						<div class="show-stage">
+							Puebla (patio)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/husbands/">Husbands</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-rockettops/">The Rockettops</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/shishio/">SHISHIO</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday puebla-indoors-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/morpei/">Morpei</a>
+						</div>
+						
+						<div class="show-stage">
+							Puebla (indoors)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday opolis-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/carly-gwin/">Carly Gwin &#038; the Sin</a>
+						</div>
+						
+						<div class="show-stage">
+							Opolis (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/alex-sin/">Alex Sin</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bison-witches after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/bbrndnc/">BBRNDNC</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bison-witches after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/party-poison/">Party Poison</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/grade-a-2/">Grade A</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bison-witches after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/spade/">Spade</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bison-witches after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/fox-kill/">Fox Kill</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-riot-waves/">The Riot Waves</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/speak-memory/">Speak, Memory</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/astral-planes/">Astral Planes</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/malachi-x-alkemyst/">Malachi X Alkemyst</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/fracture/">Fracture</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/captain-knotts/">Captain Knotts</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/n8/">N8</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/jesse-strange/">Jesse Strange</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday fowler-honda-gray-street-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:30 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/travis-traps/">Travis Traps</a>
+						</div>
+						
+						<div class="show-stage">
+							Fowler Honda Gray Street Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/grade-a/">Grade A</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/daven-treague/">Daven Treague</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday red-brick-bar-outdoors-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/buxshot/">Buxshot</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar (outdoors)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/vice-city/">Vice City</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/kapzlokk/">Kapzlokk</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/arkhitect/">Arkhitect</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/travis-traps-2/">Travis Traps</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday red-brick-bar-outdoors-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-big-news/">The Big News</a>
+						</div>
+						
+						<div class="show-stage">
+							Red Brick Bar (outdoors)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/fauxbia/">Fauxbia</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/krispe/">Krispe</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bison-witches  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/dirty-flaws/">Dirty Flaws</a>
+						</div>
+						
+						<div class="show-stage">
+							Bison Witches						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bluebonnet-bar after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/carter-sampson/">Carter Sampson</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bluebonnet-bar after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/erik-the-viking/">Erik the Viking</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/dylan-stewart-the-eulogists/">Dylan Stewart &#038; the Eulogists</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/giraffe-massacre/">Giraffe Massacre</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="friday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/dan-martin-band/">Dan Martin Band</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/susan-herndon-trio/">Susan Herndon Trio</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday bluebonnet-bar  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/red-wood-rising/">Red Wood Rising</a>
+						</div>
+						
+						<div class="show-stage">
+							Bluebonnet Bar						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday brewhouse after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															12:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/saint-loretto/">Saint Loretto</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday brewhouse after-midnight ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															1:00 am														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/pvlms/">PVLMS</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/the-so-help-mes/">The So Help Me&#8217;s</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday michelangelo-8217-s-indoor-  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															6:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/terry-buffalo-ware-gregg-standridge/">Terry &#8216;Buffalo&#8217; Ware &#038; Gregg Standridge</a>
+						</div>
+						
+						<div class="show-stage">
+							Michelangelo&#8217;s (indoor)						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday main-038-peters-spectacle-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															7:45 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/blue-moon-circus/">Blue Moon Circus</a>
+						</div>
+						
+						<div class="show-stage">
+							Main &#038; Peters Spectacle Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															8:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/larry-chin/">Larry Chin</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/mopak/">Mopak</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="saturday main-038-peters-spectacle-stage  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															9:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/glow-show-with-many-artists/">Glow Show (with many artists)</a>
+						</div>
+						
+						<div class="show-stage">
+							Main &#038; Peters Spectacle Stage						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															10:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/vastye/">Vastye</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+												
+				
+				<li class="thursday brewhouse  ">
+					<div class="schedule-item-info">
+						
+						<div class="show-time ">
+															11:00 pm														
+						</div>
+						
+						<div class="band-title">
+							<a href="http://normanmusicfestival.com/bands/fm-pilots/">FM Pilots</a>
+						</div>
+						
+						<div class="show-stage">
+							Brewhouse						</div>
+						
+					</div>
+				</li>
+					
+							</ul>
+		</div>
+	</section>
+	
+	
+</section>
+
+	
+	<footer class="site-footer">
+		<h2 class="footer-logo"><img src="http://normanmusicfestival.com/wp-content/themes/NMF/img/NMF9_logo.png" alt="Norman Music Festival" /></h2>
+		
+		<p class="social">
+			<a href="https://www.facebook.com/NormanMusicFestival" target="_blank"><span class="icon-facebook"></span></a>
+			<a href="https://www.twitter.com/NormanMusicFest" target="_blank"><span class="icon-twitter"></span></a>
+			<a href="http://www.instagram.com/normanmusicfestival" target="_blank"><span class="icon-instagram"></span></a>
+		<p>
+			&copy; 2016 Norman Music Festival  |  Free. Original. Oklahoma.. All rights reserved. <br />
+		</p>
+		
+	</footer>
+
+	<script type='text/javascript' src='http://normanmusicfestival.com/wp-includes/js/wp-embed.js?ver=4.4.2'></script>
+	</body>
+</html>

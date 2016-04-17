@@ -10,8 +10,8 @@ import { isError, parentID } from 'nmf-schedule/extractors/event';
 
 export default DS.RESTAdapter.extend({
 
-  proxy: config.APP.CORS_PROXY,
-  host: config.APP.NMF_HOST,
+  //proxy: config.APP.CORS_PROXY,
+  //host: config.APP.NMF_HOST,
 
   find(store, type, id) {
     return new Ember.RSVP.Promise( (resolve, reject) => {
@@ -87,7 +87,7 @@ export default DS.RESTAdapter.extend({
         //break;
 
       case "schedule":
-        url = "schedule";
+        url = "schedule.html";
         break;
 
       //case "active":
