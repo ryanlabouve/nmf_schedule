@@ -2,6 +2,8 @@ import Ember from 'ember';
 import $ from 'jquery';
 
 export default Ember.Controller.extend({
+  queryParams: ['selectedStage'],
+  selectedStage: '',
   sortProps: ['sortableTime','stageName'],
   sortedEvents: Ember.computed.sort('model.events', 'sortProps'),
   actions: {
