@@ -10,7 +10,7 @@ import { isError, parentID } from 'nmf-schedule/extractors/event';
 
 export default DS.RESTAdapter.extend({
 
-  proxy: config.APP.HACKERNEWS_CORS_PROXY,
+  proxy: config.APP.CORS_PROXY,
   host: config.APP.HACKERNEWS_HOST,
 
   find(store, type, id) {

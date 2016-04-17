@@ -27,7 +27,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
-  ENV.APP.HACKERNEWS_CORS_PROXY = 'https://cors-anywhere.herokuapp.com';
+  ENV.APP.CORS_PROXY = 'https://cors-anywhere.herokuapp.com';
   ENV.APP.HACKERNEWS_HOST = 'https://news.ycombinator.com';
 
   if (environment === 'test') {
