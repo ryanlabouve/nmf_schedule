@@ -62,6 +62,7 @@ export default DS.Adapter.extend({
           Ember.run(null, reject, "Not found");
         } else {
           console.log('in else');
+          console.log(xhr.response);
           Ember.run(null, resolve, xhr.response);
         }
       };

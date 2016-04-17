@@ -64,7 +64,7 @@ function extractBody(lines) {
   return toArray(lines).map( line => (line.innerText || line.textContent).replace(/\s/g, " ").trim() ).join("\n\n") || null;
 }
 
-function extractComment(story, row) {
+function extractComment(event, row) {
   // A normal comment row looks like this:
   //
   //   <tr>
@@ -128,7 +128,7 @@ function extractComment(story, row) {
     level:     null,
     parent:    null,
     comments:  [],
-    story:     story.id
+    event:     event.id
   };
 
   var $spacer    = $("img[src='s.gif'][width]", row),
@@ -159,10 +159,10 @@ function extractComment(story, row) {
   return comment;
 }
 
-function extractComments(story, rows) {
+function extractComments(event, rows) {
   var comments = [];
 
-  story.comments = [];
+  event.comments = [];
 
   // Keep track of the nesting of the comments. This is orangized as a stack of
   // { level, parent, lastSibling } tuples.
@@ -179,7 +179,7 @@ function extractComments(story, rows) {
   var nesting = [ [0, null, null] ];
 
   toArray(rows).forEach( (row) => {
-    let comment = extractComment(story, row);
+    let comment = extractComment(event, row);
 
     let level, parentComment, lastSibling;
 
@@ -204,7 +204,7 @@ function extractComments(story, rows) {
     if (parentComment) {
       parentComment.comments.push( comment.id );
     } else {
-      story.comments.push( comment.id );
+      event.comments.push( comment.id );
     }
 
     delete comment.level;
@@ -213,8 +213,8 @@ function extractComments(story, rows) {
   return comments;
 }
 
-function extractStory(row1, row2, row3, commentRows) {
-  var story = {
+function extractEvent(row1, row2, row3, commentRows) {
+  var event = {
     id:        null,
     tag:       null,
     title:     null,
@@ -239,7 +239,7 @@ function extractStory(row1, row2, row3, commentRows) {
   // Some jobs are external links that are neither up-votable nor commentable,
   // so we just have to generate an ID if we couldn't find one.
 
-  story.id = extractID( $("a:has(.votearrow)", row1).attr("id") ) ||
+  event.id = extractID( $("a:has(.votearrow)", row1).attr("id") ) ||
              extractID( $(".subtext a:last-of-type", row2).attr("href") ) ||
              extractID( $(".title a", row1).attr("href") ) ||
              generateID("job");
@@ -266,19 +266,19 @@ function extractStory(row1, row2, row3, commentRows) {
       titleText = $title.text().trim(),
       titleHref = $title.attr("href");
 
-  story.tag   = extractTag(titleText);
-  story.title = extractTitle(titleText);
-  story.url   = titleHref;
+  event.tag   = extractTag(titleText);
+  event.title = extractTitle(titleText);
+  event.url   = titleHref;
 
-  if (story.url.indexOf("item?id=") === 0) {
-    story.tag = story.tag || "Discuss";
-    story.url = `https://news.ycombinator.com/${story.url}`;
+  if (event.url.indexOf("item?id=") === 0) {
+    event.tag = event.tag || "Discuss";
+    event.url = `https://news.ycombinator.com/${event.url}`;
   }
 
   var source = $(".title .sitebit", row1).text().trim();
 
   if (source) {
-    story.source = extractSource(source);
+    event.source = extractSource(source);
   }
 
   // The second row looks something like this:
@@ -307,13 +307,13 @@ function extractStory(row1, row2, row3, commentRows) {
       submitted = $(".subtext", row2).text().trim();
 
   if ($points.length > 0 && $comments.length > 0 && $submitter.length > 0) {
-    story.points    = toInt( $points.text() );
-    story.submitter = $submitter.text().trim();
-    story.submitted = extractSubmitted( submitted );
-    story.commentsCount = toInt( $comments.text() );
+    event.points    = toInt( $points.text() );
+    event.submitter = $submitter.text().trim();
+    event.submitted = extractSubmitted( submitted );
+    event.commentsCount = toInt( $comments.text() );
   } else {
-    story.tag = "Job";
-    story.submitted = extractSubmitted( submitted );
+    event.tag = "Job";
+    event.submitted = extractSubmitted( submitted );
   }
 
   // Discussion threads like Ask HN has a body of text attached to them. We can
@@ -329,31 +329,32 @@ function extractStory(row1, row2, row3, commentRows) {
   //
 
   if (row3) {
-    story.body = extractBody( $(row3).find("td:has(p)").contents() );
+    event.body = extractBody( $(row3).find("td:has(p)").contents() );
   }
 
   // Obviously we will only have this if we are on the item page.
 
-  if (story.commentsCount !== null && commentRows) {
-    comments = extractComments(story, commentRows);
+  if (event.commentsCount !== null && commentRows) {
+    comments = extractComments(event, commentRows);
   }
 
-  return [story, comments];
+  return [event, comments];
 }
 
 export function extractSingle(doc) {
   var rows = $("#hnmain table:eq(1) tr", doc);
   var commentRows = $("#hnmain table:eq(2) table", doc);
 
-  var [story, comments] = extractStory( rows[0], rows[1], rows[3], commentRows );
+  var [event, comments] = extractEvent( rows[0], rows[1], rows[3], commentRows );
 
-  return { story, comments };
+  return { event, comments };
 }
 
 export function extractArray(doc) {
+  console.log('calling extractArray!');
   var meta = {},
-      stories = [],
-      payload = { meta, stories };
+      events = [],
+      payload = { meta, events };
 
   try {
     meta.next = $("#hnmain tr:last-child a:contains(More)", doc).attr("href").split(/=|&/)[1];
@@ -364,7 +365,7 @@ export function extractArray(doc) {
   var rows = toArray( $("#hnmain table:eq(1) tr:has(.title):not(:last-child)", doc) );
 
   rows.forEach( row => {
-    stories.push( extractStory(row, row.nextElementSibling)[0] );
+    events.push( extractEvent(row, row.nextElementSibling)[0] );
   });
 
   return payload;

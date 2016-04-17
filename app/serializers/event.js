@@ -11,7 +11,7 @@ import {
 
 export default DS.RESTSerializer.extend({
 
-  extractSingle(store, type, payload, id) {
+  normalizeSingleResponse(store, type, payload, id, requestType) {
     console.log('running extractSingle');
     payload = parseSingle(payload);
 
@@ -20,13 +20,16 @@ export default DS.RESTSerializer.extend({
     return this._super(store, type, payload, id);
   },
 
-  extractArray(store, type, payload) {
-    console.log('running extractArray');
+  normalizeArrayResponse(store, type, payload, id, requestType) {
+    console.log('running normalizeArrayResponse');
     payload = parseArray(payload);
 
-    this.extractMeta(store, type, payload);
+    this.extractMeta(store, type, payload, id, requestType);
 
-    return this._super(store, type, payload);
+    var returnValue = this._super(store, type, payload, id, requestType);
+    console.log("-----------");
+    console.log(returnValue);
+    return returnValue;
   }
 
 });
