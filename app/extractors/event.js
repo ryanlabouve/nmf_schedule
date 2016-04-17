@@ -214,6 +214,39 @@ function extractComment(event, row) {
   //return comments;
 //}
 
+function buildSortableTime(day, time){
+  var sortableTime = 0;
+  switch(day){
+    case "thursday":
+      sortableTime = 100000;
+      break;
+
+    case "friday":
+      sortableTime = 200000;
+      break;
+
+    case "saturday":
+      sortableTime = 300000;
+      break;
+  }
+  var timePart = time.split(" ")[0],
+      amPmPart = time.split(" ")[1],
+      hourPart = parseInt(timePart.split(":")[0]),
+      minPart  = parseInt(timePart.split(":")[1]);
+
+  if(hourPart === 12){
+    // leave it alone
+  }else{ // afternoon
+    hourPart += 12;
+  }
+  if(amPmPart === 'am'){
+    hourPart += 12;
+  }
+  sortableTime += hourPart * 100;
+  sortableTime += minPart;
+  return sortableTime;
+}
+
 function extractEvent(row1/*, row2, row3, commentRows*/) {
   var event = {
     id:        null,
@@ -221,7 +254,8 @@ function extractEvent(row1/*, row2, row3, commentRows*/) {
     stage:     null,
     time:      null,
     band:      null,
-    link:      null
+    link:      null,
+    sortableTime: null
   };
 
   var comments = [];
@@ -251,6 +285,7 @@ function extractEvent(row1/*, row2, row3, commentRows*/) {
   //   3. The day:    "saturday"
   //   4. The stage:  "Bluebonnet Bar"
   //   5. The time:   "12:00 am"
+  //   6. The sortableTime: ??
 
 
   var $bandTag = $(".band-title a", row1),
@@ -259,7 +294,8 @@ function extractEvent(row1/*, row2, row3, commentRows*/) {
       className  = $(row1).attr('class'),
       day =      className.split(" ")[0],
       time =     $(".show-time", row1).text().trim(),
-      stageName =    $(".show-stage", row1).text().trim();
+      stageName =    $(".show-stage", row1).text().trim(),
+      sortableTime = buildSortableTime(day, time);
 
 
 
@@ -268,7 +304,7 @@ function extractEvent(row1/*, row2, row3, commentRows*/) {
   event.day = day;
   event.time = time;
   event.stageName = stageName;
-
+  event.sortableTime = sortableTime;
 
   //if (event.url.indexOf("item?id=") === 0) {
     //event.tag = event.tag || "Discuss";

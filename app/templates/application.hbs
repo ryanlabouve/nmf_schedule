@@ -2,7 +2,7 @@
 
 <ul>
 {{#each model as |event|}}
-<li>{{event.day}} {{event.time}} {{event.bandName}} :: {{event.stageName}}</li>
+<li>{{event.sortableTime}} -- {{event.day}} {{event.time}} {{event.bandName}} :: {{event.stageName}}</li>
 {{/each}}
 </ul>
 

@@ -6,5 +6,6 @@ export default Model.extend({
   day: attr(),
   time: attr(),
   stageName: attr(),
-  title: attr()
+  title: attr(),
+  sortableTime: attr()
 });
