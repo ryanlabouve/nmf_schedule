@@ -21,5 +21,21 @@ export default Ember.Route.extend({
       //friendlyName: day.get('friendlyName')
     //});
     return day;
+  },
+
+  setupController(controller,model){
+    this._super(controller,model);
+    var day = model.get('id');
+    var scrollTop = controller.get('scrollTop'+day) || 0;
+    controller.set('scrollTop', scrollTop);
+  },
+
+  actions:{
+    willTransition(){
+      console.log('calling will transition');
+      var scrollTop = this.get('controller.scrollTop');
+      var day = this.get('controller.model.id');
+      this.set('controller.scrollTop'+day,scrollTop);
+    }
   }
 });

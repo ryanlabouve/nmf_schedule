@@ -21,9 +21,7 @@
             as |event index| }}
             <li class='small-12 columns accordion event-row' data-talk-id={{event.id}} data-event-row-id={{event.id}}>
               <div class="row small-collapse medium-uncollapse">
-                <div class="event-time small-3 medium-2 columns">
-                  <h5>{{event.time}}</h5>
-                </div>
+                
                 <div class="band-name small-9 medium-5 columns">
                   <h3 data-event-id={{event.id}}>{{event.bandName}}</h3>
                   {{!is-interested-button talkId=talk.id}}
@@ -31,6 +29,9 @@
                 <div class="stage-name small-9 medium-5 columns">
                   <h5>{{event.stageName}}</h5>
                   {{!is-interested-button talkId=talk.id}}
+                </div>
+                <div class="event-time small-3 medium-2 columns">
+                  <h5>{{event.time}}</h5>
                 </div>
               </div>
             </li>

@@ -11,6 +11,7 @@ function dayIsLessThan(day1, day2){
 }
 
 export default function() {
+  //this.setDefault({duration: 3000});
   this.transition(
     this.fromRoute('day'),
     this.toRoute('day'),
