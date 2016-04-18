@@ -4,6 +4,7 @@ import $ from 'jquery';
 export default Ember.Controller.extend({
   queryParams: ['selectedStage'],
   selectedStage: '',
+  columns: [100],
   //sortProps: ['sortableTime','stageName'],
   //sortedEvents: Ember.computed.sort('model.events', 'sortProps'),
   filteredEvents: Ember.computed('model','model.events','selectedStage',function(){
@@ -15,6 +16,7 @@ export default Ember.Controller.extend({
       return events.filter(event => event.get('stageName') === selectedStage);
     }
   }),
+
   actions: {
     chooseTalk(event) {
       let talkId = $(event.target).closest('li').data('talk-id');
@@ -24,6 +26,12 @@ export default Ember.Controller.extend({
       }else{
         console.log('skipping!');
       }
+    },
+    scrollChange(left, top){
+      this.setProperties({
+        scrollTop: top,
+        scrollLeft: left
+      });
     }
   }
 });
