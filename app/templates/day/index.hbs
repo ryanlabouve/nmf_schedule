@@ -1,20 +1,20 @@
-{{#illiquid-model model as |day|}}
-  {{#memory-scroll key=(concat "day" day.id) class="memory-scroll" }}
+{{!#liquid-bind model as |day|}}
+  {{#memory-scroll key=(concat "day" model.id) class="memory-scroll" }}
 
     <section class="row day">
-        <div class="row" id={{day.id}}>
+        <div class="row" id={{model.id}}>
           <div class="small-12 columns">
-            <h2 class="">{{day.id}}</h2>
+            <h2 class="">{{model.friendlyName}}</h2>
             <select onchange={{action (mut selectedStage) value="target.value"}}>
               <option value='' selected={{eq selectedStage ''}}>All Stages</option>
-              {{#each day.stages as |stageChoice|}}
+              {{#each model.stages as |stageChoice|}}
                 <option value={{stageChoice}} selected={{eq selectedStage stageChoice}}>{{stageChoice}}</option>
               {{/each}}
             </select>
           </div>
         </div>
         <ol class="no-bullets" onclick={{action "chooseTalk"}}>
-          {{#liquid-bind sortedEvents as |liquidEvents|}}
+          {{#liquid-bind filteredEvents as |liquidEvents|}}
           {{#each liquidEvents as |event|}}
             <li class='small-12 columns accordion event-row' data-talk-id={{event.id}} data-event-row-id={{event.id}}>
               <div class="row small-collapse medium-uncollapse">
@@ -37,4 +37,4 @@
     </section>
 
   {{/memory-scroll}}
-{{/illiquid-model}}
+{{!/liquid-bind}}

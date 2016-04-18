@@ -4,8 +4,17 @@ import $ from 'jquery';
 export default Ember.Controller.extend({
   queryParams: ['selectedStage'],
   selectedStage: '',
-  sortProps: ['sortableTime','stageName'],
-  sortedEvents: Ember.computed.sort('model.events', 'sortProps'),
+  //sortProps: ['sortableTime','stageName'],
+  //sortedEvents: Ember.computed.sort('model.events', 'sortProps'),
+  filteredEvents: Ember.computed('model','model.events','selectedStage',function(){
+    var events = this.get('model.events');
+    var selectedStage = this.get('selectedStage');
+    if(selectedStage.trim() === ''){
+      return events;
+    }else{
+      return events.filter(event => event.get('stageName') === selectedStage);
+    }
+  }),
   actions: {
     chooseTalk(event) {
       let talkId = $(event.target).closest('li').data('talk-id');

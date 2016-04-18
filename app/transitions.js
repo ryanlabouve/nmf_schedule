@@ -6,7 +6,7 @@ var dayMappings = {
 
 
 function dayIsLessThan(day1, day2){
-  console.log('traying dayIsLessThan', day1, day2);
+  //console.log('traying dayIsLessThan', day1, day2);
   return dayMappings[day1.id] > dayMappings[day2.id];
 }
 
