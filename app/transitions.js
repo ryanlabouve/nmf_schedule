@@ -44,4 +44,28 @@ export default function() {
       use: 'to-down'
     })
   );
+
+  //this.transition(
+    //this.childOf('ol.no-bullets'),
+    //this.use('explode', {
+      //matchBy: 'data-event-row-id',      // matchBy will look for the same
+                                     //// HTML attribute value in both
+                                     //// the old and new elements, and
+                                     //// for each matching pair, it
+                                     //// runs the given transition.
+
+      //// fly-to is a built in transition that animate the element
+      //// moving from the position of oldElement to the position of
+      //// newElement.
+      //use: ['fly-to', { duration: 350 }]
+    //},{
+      //pickOld: '.event-row',
+      //use: ['fade', { duration: 350 }]
+    //},
+    //{
+      //pickNew: '.event-row',
+      //use: ['fade', { duration: 350 }]
+    //}),
+    //this.debug(true)
+  //);
 }
