@@ -7,6 +7,7 @@ export default Ember.Route.extend({
     }
   },
   model(params){
+    console.log('calling the model hook');
     var day = this.modelFor('day');
     var events = day.get('events');
     if(params.selectedStage){

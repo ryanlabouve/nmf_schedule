@@ -1,8 +1,13 @@
 @import "ember-foundation";
 
+html, body{
+  height: 100%;
+}
+
 .schedule {
     display: flex;
     flex-direction: column;
+    height: 100%;
     height: 100vh;
 }
 
@@ -14,16 +19,6 @@
     border-bottom: 1px solid #D2CDCC;
 }
 
-.schedule > .liquid-container {
-    flex: 1;
-    position: relative;
-}
-
-.back-list-item {
-    float: left;
-    margin-right: -65px !important;
-}
-
 .back-link {
     /*padding: 20px;*/
 }
@@ -33,8 +28,11 @@
 }
 
 .schedule > .liquid-container {
-    flex: 1;
+    flex: 1 1 100%;
     position: relative;
+    border:1px solid blue;
+    min-height:500px;
+    min-height: 80vh;
 }
 
 .schedule > .liquid-container > .liquid-child {

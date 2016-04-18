@@ -1,7 +1,5 @@
-
 {{#illiquid-model model as |day|}}
   {{#memory-scroll key=(concat "day" day.id) class="memory-scroll" }}
-
 
     <section class="row day">
         <div class="row" id={{day.id}}>
@@ -15,9 +13,10 @@
             </select>
           </div>
         </div>
-        <ol class="no-bullets" onclick={{action "chooseTalk"}} >
-          {{#each sortedEvents as |event|}}
-            <li class='small-12 columns accordion' data-talk-id={{event.id}}>
+        <ol class="no-bullets" onclick={{action "chooseTalk"}}>
+          {{#liquid-bind sortedEvents as |liquidEvents|}}
+          {{#each liquidEvents as |event|}}
+            <li class='small-12 columns accordion event-row' data-talk-id={{event.id}} data-event-row-id={{event.id}}>
               <div class="row small-collapse medium-uncollapse">
                 <div class="event-time small-3 medium-2 columns">
                   <h5>{{event.time}}</h5>
@@ -33,8 +32,8 @@
               </div>
             </li>
           {{/each}}
+          {{/liquid-bind}}
         </ol>
-
     </section>
 
   {{/memory-scroll}}
