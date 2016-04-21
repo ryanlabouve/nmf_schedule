@@ -1,6 +1,14 @@
 import Ember from 'ember';
 
+const { inject } = Ember;
+
 export default Ember.Route.extend({
+
+  myShows: inject.service(),
+
+  afterModel() {
+    console.log("A S D EFF");
+  },
 
   model(params) {
     var _this = this;

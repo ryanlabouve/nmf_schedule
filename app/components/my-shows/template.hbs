@@ -1,0 +1,9 @@
+<hr>
+<h2>My Shows</h2>
+{{#each myShows.shows as |show|}}
+  {{log show}}
+{{else}}
+  Mark the shows you want to see and we'll keep track of them here!
+{{/each}}
+{{yield}}
+<hr>
